@@ -7,7 +7,7 @@ window.I18N = (() => {
     [`Yükleniyor`, `Loading`],
     [`<b>n<span class="n0">0</span>eyes</b> · AI Vision System`, `<b>n<span class="n0">0</span>eyes</b> · AI Vision System`],
     [`Mevcut kameralarınızı yapay zekâ ile izler`, `Watches your existing cameras with AI`],
-    [`İşleme ve kayıt tesisinizdeki kutuda · Kimlik verisi tutulmaz`, `Processed and stored on the box at your site · No identity data`],
+    [`İşleme ve kayıt tesisinizdeki kutuda · Duygu tanıma yok`, `Processed and stored on the box at your site · No emotion recognition`],
     [`İstanbul, Türkiye · <span class="g">Plug. Install. See More.</span>`, `Istanbul, Türkiye · <span class="g">Plug. Install. See More.</span>`],
     [`KAYDIR`, `SCROLL`], [`<span></span>KAYDIR`, `<span></span>SCROLL`],
     [`Siteye geç <i>→</i>`, `Skip to site <i>→</i>`],
@@ -22,7 +22,7 @@ window.I18N = (() => {
     [`Yetenekler`, `Capabilities`], [`Tesis`, `Facility`], [`Pilot`, `Pilot`], [`Demo Talep Et`, `Request a Demo`],
     // hero
     [`NASIL ANALİZ EDER`, `HOW IT ANALYSES`], [`ÖRNEK KAYIT`, `RECORDED SAMPLE`],
-    [`mevcut kameralar`, `existing cameras`], [`kimlik verisi tutulmuyor`, `no identity data`], [`işleme ve kayıt tesiste`, `processed and stored on-site`],
+    [`mevcut kameralar`, `existing cameras`], [`duygu tanıma yok`, `no emotion recognition`], [`işleme ve kayıt tesiste`, `processed and stored on-site`],
     [`Kameralarınızı<br>akıllı bir denetim<br>sistemine dönüştürün.`, `Turn your cameras<br>into an intelligent<br>monitoring system.`],
     [`n0eyes, mevcut kamera altyapısına ve sunucularınıza müdahale etmeden; ayrı bir bilgisayar üzerinden canlı görüntüleri izler, anlamlandırır ve yöneticiye raporlanabilir içgörü üretir. Depo, liman, hastane, mağaza — kameranız neredeyse, n0eyes orada.`,
      `n0eyes watches your live feeds from a separate computer — without touching your camera infrastructure or servers — understands what it sees and turns it into reportable insight for management. Warehouse, port, hospital, store: wherever your camera is, n0eyes is there.`],
@@ -44,8 +44,8 @@ window.I18N = (() => {
     [`CAM 2 · MAL KABUL`, `CAM 2 · RECEIVING`],
     [`KİŞİ`, `PEOPLE`], [`HAREKETSİZ`, `IDLE`], [`RAMPA`, `DOCK`], [`DOLU`, `BUSY`], [`ARAÇ`, `VEHICLE`],
     [`OLAY AKIŞI`, `EVENT FEED`], [`Olaylar video ile eş zamanlı akar…`, `Events stream in sync with the video…`],
-    [`Kimlik verisi tutulmaz`, `No identity data`], [`İşleme tesiste`, `Processed on-site`],
-    [`kesintisiz izleme · gece görüşü dahil`, `continuous watch · night vision included`],
+    [`Duygu tanıma yok`, `No emotion recognition`], [`İşleme tesiste`, `Processed on-site`],
+    [`gece gündüz izleme · kameranızın gece görüşüyle`, `around-the-clock watch · with your cameras' night vision`],
     [`ayırt edilen sınıf · insan, araç, ekipman`, `classes told apart · people, vehicles, equipment`],
     // fabrika (#79; metinler Morte önerisi, Haqd onayına)
     [`Fabrika`, `Factory`],
@@ -57,22 +57,28 @@ window.I18N = (() => {
     [`Bu gösterimdeki tespit sayısı`, `Detections in this demo`],
     // yetenekler
     [`ANA YETENEKLER`, `CORE CAPABILITIES`],
-    [`İnsanı değil, <span class="g">akışı ve olayı</span> takip ediyoruz.`, `We track <span class="g">flow and events,</span> not individuals.`],
-    [`Depo, üretim, lojistik, perakende, sağlık — kamera neredeyse aynı motor. Sistem; insan hareketi, alan kullanımı ve olağan dışı olayları yöneticinin anlayacağı sade raporlara çevirir.`,
-     `Warehousing, manufacturing, logistics, retail, healthcare — wherever the camera is, the same engine. It turns movement, space usage and unusual events into plain reports a manager can act on.`],
-    [`Kişi sınıflandırma`, `Person classification`], [`İşçi, misafir, müşteri ve yetkisiz giriş gibi farklı kişi tiplerini ayırmaya yönelik analiz. İsimsiz, toplu.`, `Distinguishes worker, visitor, customer and unauthorised entry. Anonymous, aggregated.`],
-    [`Bekleme ve akış`, `Idle time and flow`], [`Gün içi yoğunluk, duruş, bekleme süreleri ve alan bazlı çalışma ritmini hat/bölge bazında raporlar.`, `Reports daily density, stoppages, waiting times and work rhythm per line/zone.`],
-    [`Tehlike ve anomali`, `Hazards and anomalies`], [`Yasak bölgeye giriş, forklift yolunda insan, mesai dışı hareket — kanıt karesiyle.`, `Restricted-zone entry, person in a forklift lane, after-hours movement — with an evidence frame.`],
-    [`Alan ve varlık takibi`, `Space and asset tracking`], [`Giriş-çıkışlar, rampa/kapı doluluğu, depo ve üretim hattı çevresindeki akış görünür olur.`, `Entries and exits, dock/door occupancy and flow around the warehouse and production line become visible.`],
-    [`Canlı uyarı mantığı`, `Live alert logic`], [`Yöneticinin hızlı aksiyon alması için uyarı üretir; olayları tarih, saat ve kamera bazında kaydeder.`, `Raises alerts so managers can act fast; logs events by date, time and camera.`],
-    [`Yönetici raporu`, `Management reports`], [`Teknik görüntü verisini sabah brifine, trend panellerine ve günlük raporlara dönüştürür.`, `Turns technical video data into a morning brief, trend panels and daily reports.`],
+    [`Güvenlik, akış ve iş gücü. <span class="g">Tek kutuda.</span>`, `Safety, flow and workforce. <span class="g">One box.</span>`],
+    [`Depo, üretim, lojistik, perakende, sağlık: kamera neredeyse aynı motor. Sistem tehlikeyi, alan kullanımını ve iş akışını yöneticinin anlayacağı sade uyarı ve raporlara çevirir.`,
+     `Warehousing, manufacturing, logistics, retail, healthcare: wherever the camera is, the same engine. It turns hazards, space usage and workflow into plain alerts and reports a manager can act on.`],
+    [`Tehlike ve anomali uyarıları`, `Hazard and anomaly alerts`], [`Belirlediğiniz saatlerde alanda kişi, yasak bölgeye giriş, forklift yolunda insan, bölgede kalabalık, koşma ve tehlikeli alanda telefon kullanımı. Çit ve sınır çizgisi geçişi her saatte uyarır. Hepsi kanıt karesi ve klibiyle telefona gelir.`, `A person in an area during the hours you set, restricted-zone entry, a person in a forklift lane, crowding, running and phone use in a hazard zone. Crossing a fence or boundary line alerts at any hour. All of it reaches your phone with an evidence frame and clip.`],  // PLAN F5.1 F5.3 F5.4 F5.5 F5.12 K-83
+    [`Düşme tespiti`, `Fall detection`], [`Yerde hareketsiz kalan kişiyi fark eder, ikinci bir yapay zekâ bakışıyla doğrular ve hemen haber verir.`, `Spots a person lying still on the floor, confirms it with a second AI check and alerts you right away.`],  // PLAN F5.6
+    [`KKD kontrolü`, `PPE check`], [`Baret ve yelek gereken alanlarda koruyucu ekipmansız girişi işaretler.`, `Flags entry without a hard hat or vest in areas where they are required.`],  // PLAN Y-116
+    [`Duman, alev ve sahipsiz nesne`, `Smoke, flame and unattended objects`], [`Duman ya da alev belirtisini ve uzun süre başında kimse olmayan yeni nesneyi bildirir. Yangın alarm sisteminin yerine geçmez, ona ek bir göz olur.`, `Reports signs of smoke or flame and new objects left unattended for a long time. It does not replace your fire alarm system; it adds another pair of eyes.`],  // PLAN F5.7 F5.8
+    [`Plaka ve araç takibi`, `Plates and vehicles`], [`Giriş-çıkışta plakayı kutuda okur; şirket aracını, misafiri ve yabancı aracı ayırır. Rampada kalış süresi ve araç trafiği raporlanır.`, `Reads plates on the box at entry and exit and tells company, visitor and unknown vehicles apart. Dock dwell time and vehicle traffic are reported.`],  // PLAN Y-292 F1.4
+    [`Kişi bazlı mola ve performans`, `Breaks and performance per person`], [`İşletme açarsa mola sayısı ve süresi ile istasyonda geçen süre çalışan numarası başına raporlanır. Kimlik çalışan numarasıdır; duygu tanıma yoktur.`, `If the business turns it on, break count and length and time at each station are reported per employee number. Identity is the employee number; there is no emotion recognition.`],  // PLAN F3.5 F3.2 K-62 K-43
+    [`Kart kaydı eşleştirme`, `Time-clock matching`], [`Personel kartı (PDKS) kayıtlarını kamerayla eşleştirir; kart okutulup tesiste görülmeyen ya da erken çıkan durumları gösterir.`, `Matches staff card (time-clock) records with the cameras and shows cards swiped with no one seen on site, or early leavers.`],  // PLAN F6.1 F6.2 F6.3
+    [`Alan, akış ve ısı haritası`, `Space, flow and heat map`], [`Rampa, depo ve hat doluluğu, hattın boş kaldığı süreler ve kat planınız üzerinde ısı haritası. Sistem tesisin normalini öğrenir, sapmayı bildirir.`, `Dock, warehouse and line occupancy, idle-line time and a heat map on your floor plan. The system learns your site's normal and reports deviations.`],  // PLAN F1.3 F1.7 F3.1 F7.1 F7.2
+    [`Sor n0eyes ve sabah brifi`, `Ask n0eyes and the morning brief`], [`“Dün öğleden sonra rampada kaç kişi vardı?” diye sorun, kutu cevaplasın. Her sabah dünün özeti tek mesajda gelir.`, `Ask “How many people were on the dock yesterday afternoon?” and the box answers. Every morning, yesterday's summary arrives in one message.`],  // PLAN F7.5 F7.6.6
+    [`iPhone uygulaması`, `iPhone app`], [`Canlı izleme, kanıt karesi ve klip. Bildirimde kanıt karesini görür, Evet / Hayır ile tek dokunuşta cevaplarsınız.`, `Live view, evidence frames and clips. See the evidence frame in the notification and answer Yes / No with one tap.`],  // PLAN F7.6 Y-333
+    [`Kur ve git`, `Install and go`], [`Kutu kameraları kendisi bulur, sahayı sessizce izleyip kural önerir, eşikleri sahadan türetir. Siz yalnız onaylarsınız.`, `The box finds the cameras itself, watches the site quietly, proposes rules and derives thresholds from your site. You only approve.`],  // PLAN FK.1 FK.2 FK.3 FK.4 FK.5
+    [`Filo öğrenmesi`, `Fleet learning`], [`Ne kadar çok fabrika, o kadar iyi model. Merkeze görüntü gitmez; yalnız sayılar ve kutuda doğrulanmış model güncellemeleri gider. Her kutu yeni modeli kendi verisinde ölçmeden almaz.`, `The more factories, the better the model. No footage goes to the centre, only numbers and model updates verified on the box. Each box tests a new model on its own data before taking it.`],  // PLAN Y-306
     // tesis
     [`TESİSİN HER YERİNDE`, `ACROSS THE WHOLE FACILITY`],
     [`Bütün kameralar. <span class="g">Tek bir göz.</span>`, `Every camera. <span class="g">One eye.</span>`],
     [`Otoparktan rampaya, depodan ofis girişine — mevcut her kamera n0eyes bilgisayarına bağlanır. Sistem tesisin normalini öğrenir, sapmayı bildirir.`, `From the car park to the dock, from the warehouse to the office entrance — every existing camera connects to the n0eyes computer. The system learns what's normal and reports what isn't.`],
     [`Tesis planı: kameralar n0eyes bilgisayarına bağlı`, `Facility plan: cameras connected to the n0eyes computer`],
     [`OTOPARK`, `CAR PARK`], [`DIŞ AVLU`, `YARD`], [`DEPO`, `WAREHOUSE`], [`MAL KABUL`, `RECEIVING`], [`SEVKİYAT`, `SHIPPING`], [`ÜRETİM HATTI`, `PRODUCTION LINE`], [`OFİS GİRİŞİ`, `OFFICE ENTRANCE`],
-    [`DİNLENME`, `BREAK AREA`], [`kapsam dışı`, `out of scope`], [`n0eyes bilgisayarı`, `n0eyes computer`],
+    [`DİNLENME`, `BREAK AREA`], [`profile göre`, `per privacy profile`], [`n0eyes bilgisayarı`, `n0eyes computer`],
     [`CAM 5 · Otopark`, `CAM 5 · Car park`], [`CAM 1 · Avlu`, `CAM 1 · Yard`], [`CAM 3 · Depo içi`, `CAM 3 · Warehouse`], [`CAM 6 · Raf koridoru`, `CAM 6 · Rack aisle`],
     [`CAM 2 · Rampa`, `CAM 2 · Dock`], [`CAM 4 · Yükleme`, `CAM 4 · Loading`], [`CAM 7 · Hat başı`, `CAM 7 · Line head`], [`CAM 8 · Ofis girişi`, `CAM 8 · Office entrance`],
     [`kamera bağlı`, `cameras connected`], [`yeni kamera`, `new cameras`],
@@ -101,7 +107,7 @@ window.I18N = (() => {
     // footer
     [`Şirket`, `Company`], [`Tesis Haritası`, `Facility Map`], [`Pilot Plan`, `Pilot Plan`], [`İletişim`, `Contact`],
     [`Yasal`, `Legal`], [`Sık Sorulan Sorular`, `FAQ`], [`KVKK Aydınlatma Metni`, `Data Protection Notice`], [`Gizlilik Politikası`, `Privacy Policy`], [`Çerez Politikası`, `Cookie Policy`], [`Kullanım Koşulları`, `Terms of Use`],
-    [`YÜZ TANIMA YOK`, `NO FACE RECOGNITION`],
+    [`DUYGU TANIMA YOK`, `NO EMOTION RECOGNITION`],
     [`Mevcut kameralarınızı yapay zekâ ile izleyen bağımsız görüntü analiz katmanı.`, `An independent video-analysis layer that watches your existing cameras with AI.`],
     [`© 2026 n<span class="n0">0</span>eyes. Tüm hakları saklıdır.`, `© 2026 n<span class="n0">0</span>eyes. All rights reserved.`],
   ];
@@ -141,7 +147,7 @@ BEKLEME · 2 kez · toplam 1dk 57sn
    CAM 1: tepe 3 kişi · 7 adam-dk
    CAM 2: tepe 5 kişi · 28 adam-dk
 
-Toplam 5 olay. Kimlik verisi tutulmaz.`,
+Toplam 5 olay.`,
     },
     en: {
       captions: ['The camera is already there.', 'n0eyes starts to see.', 'Warehouse. Port. Shipping.', 'Hospital. Café. Store.', 'One vision. Every environment.'],
@@ -174,7 +180,7 @@ WORKFORCE
    CAM 1: peak 3 people · 7 man-min
    CAM 2: peak 5 people · 28 man-min
 
-5 events in total. No identity data kept.`,
+5 events in total.`,
     },
   };
 

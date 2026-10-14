@@ -53,7 +53,7 @@ window.I18N = (() => {
     [`Bir tekstil fabrikasında n0eyes'ın kaydettiği gerçek tespitlerden üretildi. İnsanlar nokta ve iz olarak gösterilir; yüz ve görüntü yoktur.`,
      `Generated from real detections n0eyes recorded in a textile factory. People appear as dots and tracks; no faces, no footage.`],
     [`Kutu başına <b>24 kamera</b>`, `<b>24 cameras</b> per box`],
-    [`Sor n0eyes: test setinde <b>50 sorudan 45 doğru, 0 uydurma</b>`, `Ask n0eyes: <b>45 of 50 correct, 0 made-up answers</b> on our test set`],
+    [`Sor n0eyes: test setinde <b>55 sorudan 54 doğru, 0 uydurma</b>`, `Ask n0eyes: <b>54 of 55 correct, 0 made-up answers</b> on our test set`],
     [`Bu gösterimdeki tespit sayısı`, `Detections in this demo`],
     // yetenekler
     [`ANA YETENEKLER`, `CORE CAPABILITIES`],

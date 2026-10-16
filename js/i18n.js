@@ -52,6 +52,7 @@ window.I18N = (() => {
     [`Gerçek fabrika. Gerçek tespitler. <span class="g">Görüntü yok.</span>`, `A real factory. Real detections. <span class="g">No footage.</span>`],
     [`Bir tekstil fabrikasında n0eyes'ın kaydettiği gerçek tespitlerden üretildi. İnsanlar nokta ve iz olarak gösterilir; yüz ve görüntü yoktur.`,
      `Generated from real detections n0eyes recorded in a textile factory. People appear as dots and tracks; no faces, no footage.`],
+    [`Kutu başına <b>24 kamera</b>`, `<b>24 cameras</b> per box`],
     [`Sor n0eyes: test setinde <b>50 sorudan 45 doğru, 0 uydurma</b>`, `Ask n0eyes: <b>45 of 50 correct, 0 made-up answers</b> on our test set`],
     [`Bu gösterimdeki tespit sayısı`, `Detections in this demo`],
     // yetenekler

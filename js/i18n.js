@@ -52,7 +52,6 @@ window.I18N = (() => {
     [`Gerçek fabrika. Gerçek tespitler. <span class="g">Görüntü yok.</span>`, `A real factory. Real detections. <span class="g">No footage.</span>`],
     [`Bir tekstil fabrikasında n0eyes'ın kaydettiği gerçek tespitlerden üretildi. İnsanlar nokta ve iz olarak gösterilir; yüz ve görüntü yoktur.`,
      `Generated from real detections n0eyes recorded in a textile factory. People appear as dots and tracks; no faces, no footage.`],
-    [`Kutu başına <b>24 kamera</b>`, `<b>24 cameras</b> per box`],
     [`Sor n0eyes: test setinde <b>50 sorudan 45 doğru, 0 uydurma</b>`, `Ask n0eyes: <b>45 of 50 correct, 0 made-up answers</b> on our test set`],
     [`Bu gösterimdeki tespit sayısı`, `Detections in this demo`],
     // yetenekler
@@ -62,7 +61,7 @@ window.I18N = (() => {
      `Warehousing, manufacturing, logistics, retail, healthcare — wherever the camera is, the same engine. It turns movement, space usage and unusual events into plain reports a manager can act on.`],
     [`Kişi sınıflandırma`, `Person classification`], [`İşçi, misafir, müşteri ve yetkisiz giriş gibi farklı kişi tiplerini ayırmaya yönelik analiz. İsimsiz, toplu.`, `Distinguishes worker, visitor, customer and unauthorised entry. Anonymous, aggregated.`],
     [`Bekleme ve akış`, `Idle time and flow`], [`Gün içi yoğunluk, duruş, bekleme süreleri ve alan bazlı çalışma ritmini hat/bölge bazında raporlar.`, `Reports daily density, stoppages, waiting times and work rhythm per line/zone.`],
-    [`Tehlike ve anomali`, `Hazards and anomalies`], [`Yasak bölgeye giriş, forklift yolunda insan, mesai dışı hareket — kanıt karesiyle.`, `Restricted-zone entry, person in a forklift lane, after-hours movement — with an evidence frame.`],
+    [`Tehlike ve anomali`, `Hazards and anomalies`], [`Yasak bölgeye giriş, mesai dışı hareket — kanıt karesiyle.`, `Restricted-zone entry, after-hours movement — with an evidence frame.`],
     [`Alan ve varlık takibi`, `Space and asset tracking`], [`Giriş-çıkışlar, rampa/kapı doluluğu, depo ve üretim hattı çevresindeki akış görünür olur.`, `Entries and exits, dock/door occupancy and flow around the warehouse and production line become visible.`],
     [`Canlı uyarı mantığı`, `Live alert logic`], [`Yöneticinin hızlı aksiyon alması için uyarı üretir; olayları tarih, saat ve kamera bazında kaydeder.`, `Raises alerts so managers can act fast; logs events by date, time and camera.`],
     [`Yönetici raporu`, `Management reports`], [`Teknik görüntü verisini sabah brifine, trend panellerine ve günlük raporlara dönüştürür.`, `Turns technical video data into a morning brief, trend panels and daily reports.`],

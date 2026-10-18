@@ -161,8 +161,8 @@ function karsilamaHtml(d) {
     : '';
   const icerik = `<h1 style="margin:0 0 14px;font:700 24px/1.25 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:${MARKA.beyaz};letter-spacing:-0.5px;">${kacis(m.baslik)}</h1>${govde}${dugme}`;
   const gizlilik = d.dil === 'en'
-    ? `Processed and stored on the box at your site · No emotion recognition · <a href="${AYAR.SITE}/kvkk.html" style="color:${MARKA.gri};">Data Protection Notice</a>`
-    : `İşleme ve kayıt tesisinizdeki kutuda · Duygu tanıma yok · <a href="${AYAR.SITE}/kvkk.html" style="color:${MARKA.gri};">KVKK Aydınlatma Metni</a>`;
+    ? `Footage never leaves your building · No identity data · <a href="${AYAR.SITE}/kvkk.html" style="color:${MARKA.gri};">Data Protection Notice</a>`
+    : `Görüntü binanızdan çıkmaz · Kimlik verisi tutulmaz · <a href="${AYAR.SITE}/kvkk.html" style="color:${MARKA.gri};">KVKK Aydınlatma Metni</a>`;
   return kabuk(icerik, `${kacis(m.altNot)}<br>${gizlilik}`);
 }
 

@@ -7,7 +7,7 @@ window.I18N = (() => {
     [`Yükleniyor`, `Loading`],
     [`<b>n<span class="n0">0</span>eyes</b> · AI Vision System`, `<b>n<span class="n0">0</span>eyes</b> · AI Vision System`],
     [`Mevcut kameralarınızı yapay zekâ ile izler`, `Watches your existing cameras with AI`],
-    [`İşleme ve kayıt tesisinizdeki kutuda · Kimlik verisi tutulmaz`, `Processed and stored on the box at your site · No identity data`],
+    [`İşleme ve kayıt tesisinizdeki kutuda · Duygu tanıma yok`, `Processed and stored on the box at your site · No emotion recognition`],
     [`İstanbul, Türkiye · <span class="g">Plug. Install. See More.</span>`, `Istanbul, Türkiye · <span class="g">Plug. Install. See More.</span>`],
     [`KAYDIR`, `SCROLL`], [`<span></span>KAYDIR`, `<span></span>SCROLL`],
     [`Siteye geç <i>→</i>`, `Skip to site <i>→</i>`],
@@ -22,7 +22,7 @@ window.I18N = (() => {
     [`Yetenekler`, `Capabilities`], [`Tesis`, `Facility`], [`Pilot`, `Pilot`], [`Demo Talep Et`, `Request a Demo`],
     // hero
     [`NASIL ANALİZ EDER`, `HOW IT ANALYSES`], [`ÖRNEK KAYIT`, `RECORDED SAMPLE`],
-    [`mevcut kameralar`, `existing cameras`], [`kimlik verisi tutulmuyor`, `no identity data`], [`işleme ve kayıt tesiste`, `processed and stored on-site`],
+    [`mevcut kameralar`, `existing cameras`], [`duygu tanıma yok`, `no emotion recognition`], [`işleme ve kayıt tesiste`, `processed and stored on-site`],
     [`Kameralarınızı<br>akıllı bir denetim<br>sistemine dönüştürün.`, `Turn your cameras<br>into an intelligent<br>monitoring system.`],
     [`n0eyes, mevcut kamera altyapısına ve sunucularınıza müdahale etmeden; ayrı bir bilgisayar üzerinden canlı görüntüleri izler, anlamlandırır ve yöneticiye raporlanabilir içgörü üretir. Depo, liman, hastane, mağaza — kameranız neredeyse, n0eyes orada.`,
      `n0eyes watches your live feeds from a separate computer — without touching your camera infrastructure or servers — understands what it sees and turns it into reportable insight for management. Warehouse, port, hospital, store: wherever your camera is, n0eyes is there.`],
@@ -44,7 +44,7 @@ window.I18N = (() => {
     [`CAM 2 · MAL KABUL`, `CAM 2 · RECEIVING`],
     [`KİŞİ`, `PEOPLE`], [`HAREKETSİZ`, `IDLE`], [`RAMPA`, `DOCK`], [`DOLU`, `BUSY`], [`ARAÇ`, `VEHICLE`],
     [`OLAY AKIŞI`, `EVENT FEED`], [`Olaylar video ile eş zamanlı akar…`, `Events stream in sync with the video…`],
-    [`Kimlik verisi tutulmaz`, `No identity data`], [`İşleme tesiste`, `Processed on-site`],
+    [`Duygu tanıma yok`, `No emotion recognition`], [`İşleme tesiste`, `Processed on-site`],
     [`kesintisiz izleme · gece görüşü dahil`, `continuous watch · night vision included`],
     [`ayırt edilen sınıf · insan, araç, ekipman`, `classes told apart · people, vehicles, equipment`],
     // fabrika (#79; metinler Morte önerisi, Haqd onayına)
@@ -141,7 +141,7 @@ BEKLEME · 2 kez · toplam 1dk 57sn
    CAM 1: tepe 3 kişi · 7 adam-dk
    CAM 2: tepe 5 kişi · 28 adam-dk
 
-Toplam 5 olay. Kimlik verisi tutulmaz.`,
+Toplam 5 olay.`,
     },
     en: {
       captions: ['The camera is already there.', 'n0eyes starts to see.', 'Warehouse. Port. Shipping.', 'Hospital. Café. Store.', 'One vision. Every environment.'],
@@ -174,7 +174,7 @@ WORKFORCE
    CAM 1: peak 3 people · 7 man-min
    CAM 2: peak 5 people · 28 man-min
 
-5 events in total. No identity data kept.`,
+5 events in total.`,
     },
   };
 

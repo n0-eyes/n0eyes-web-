@@ -226,8 +226,8 @@
     </div>
 
     <div class="stats reveal">
-      <div class="stat"><b data-sabit="7/24">7/24</b><span>kesintisiz izleme · gece görüşü dahil</span></div>
-      <div class="stat"><b data-count="14">0</b><span>ayırt edilen sınıf · insan, araç, ekipman</span></div>
+      <div class="stat"><b data-sabit="7/24">7/24</b><span>izleme · gece görüşü dahil</span></div>
+      <div class="stat"><b data-count="5">0</b><span>ayırt edilen sınıf · insan ve araç türleri</span><!-- servis/dedektor.py SINIFLAR: insan, araba, motosiklet, otobus, kamyon --></div>
     </div>
   </div>
 </section>
@@ -266,12 +266,12 @@
       <p class="lead">Depo, üretim, lojistik, perakende, sağlık — kamera neredeyse aynı motor. Sistem; insan hareketi, alan kullanımı ve olağan dışı olayları yöneticinin anlayacağı sade raporlara çevirir.</p>
     </div>
     <div class="grid grid--3 features">
-      <article class="feature reveal"><span class="feature__n">01</span><h3>Kişi sınıflandırma</h3><p>İşçi, misafir, müşteri ve yetkisiz giriş gibi farklı kişi tiplerini ayırmaya yönelik analiz. İsimsiz, toplu.</p></article>
-      <article class="feature reveal" style="--d:.05s"><span class="feature__n">02</span><h3>Bekleme ve akış</h3><p>Gün içi yoğunluk, duruş, bekleme süreleri ve alan bazlı çalışma ritmini hat/bölge bazında raporlar.</p></article>
-      <article class="feature reveal" style="--d:.1s"><span class="feature__n">03</span><h3>Tehlike ve anomali</h3><p>Yasak bölgeye giriş, mesai dışı hareket — kanıt karesiyle.</p></article>
-      <article class="feature reveal" style="--d:.15s"><span class="feature__n">04</span><h3>Alan ve varlık takibi</h3><p>Giriş-çıkışlar, rampa/kapı doluluğu, depo ve üretim hattı çevresindeki akış görünür olur.</p></article>
-      <article class="feature reveal" style="--d:.2s"><span class="feature__n">05</span><h3>Canlı uyarı mantığı</h3><p>Yöneticinin hızlı aksiyon alması için uyarı üretir; olayları tarih, saat ve kamera bazında kaydeder.</p></article>
-      <article class="feature reveal" style="--d:.25s"><span class="feature__n">06</span><h3>Yönetici raporu</h3><p>Teknik görüntü verisini sabah brifine, trend panellerine ve günlük raporlara dönüştürür.</p></article>
+      <article class="feature reveal"><span class="feature__n">01</span><h3>Mesai dışı ve yasak bölge</h3><p>Belirlediğiniz saatlerde korunan alanda kişi, yasak bölgeye giriş, çizgi geçişi ve avluda uzun bekleyen araç — kanıt karesiyle.</p></article><!-- n0eyes#192 canli: K-83; karar.py bekci/afterhours (sahibin saat penceresi), yasak_bolge, mesai_disi_gecis, avluda_arac -->
+      <article class="feature reveal" style="--d:.05s"><span class="feature__n">02</span><h3>Önce sahanızı öğrenir</h3><p>İlk hafta kutu sahanızın normalini öğrenir, uyarılar sonra açılır. Bu sırada size kısa sorular sorar; cevaplarınız uyarıları sahanıza göre şekillendirir.</p></article><!-- n0eyes#192 canli: kurulum.sh gozlem asamasi (ilk hafta golge); servis/sorular.py + app asistan.tsx 'Sistem soruyor' -->
+      <article class="feature reveal" style="--d:.1s"><span class="feature__n">03</span><h3>Sabah brifi ve Sor</h3><p>Gece ne olduğunu sabah tek ekranda okursunuz. Tesisinizle ilgili sorunuzu yazarsınız; cevabı kutudaki model, tesisin kayıtlarından verir.</p></article><!-- n0eyes#192 canli: servis/gunluk.py sabah brifi; servis/sor.py kutudaki model (K-35) -->
+      <article class="feature reveal" style="--d:.15s"><span class="feature__n">04</span><h3>Uygulamada kanıt</h3><p>Her uyarıda kanıt karesi ve klip, tek dokunuşla Doğru / Yanlış. Canlı izleme ve uyumlu kayıt cihazında geriye dönük izleme.</p></article><!-- n0eyes#192 canli: app olay/[id].tsx kanit kare + klip, dogru-yanlis.tsx; canli/; Detay izle (sunucu.py, uyumlu kayit cihazi) -->
+      <article class="feature reveal" style="--d:.2s"><span class="feature__n">05</span><h3>Isı haritası ve haftalık kıyas</h3><p>Alanların gün içi kullanımı, yoğun saatler ve bu haftanın geçen haftayla farkı.</p></article><!-- n0eyes#192 canli: servis/isi.py + app isi.tsx; raporlar.py haftalik kiyas -->
+      <article class="feature reveal" style="--d:.25s"><span class="feature__n">06</span><h3>Kendi kendine bakar</h3><p>Görüntüsü kesilen ya da kapanan kamerayı bildirir, kendini test eder ve her gece kendini günceller. Dinlenme alanları gizli kalır.</p></article><!-- n0eyes#192 canli: kamera_arizasi (kurallar.py, saglik turu hep anlik); n0eyes-oztest; otoguncelle.sh (son-yesil); politika.py dinlenme maskesi (K-43) -->
     </div>
   </div>
 </section>
@@ -468,7 +468,7 @@
   </div>
 </footer>
 
-<script src="js/i18n.js?v=20261016a" defer></script>
+<script src="js/i18n.js?v=20261018a" defer></script>
 <script src="js/main.js?v=20261008e" defer></script>
 <script src="js/fabrika.js?v=20261008f" defer></script>
 <script src="js/form.js?v=20261008a" defer></script>

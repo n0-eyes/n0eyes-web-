@@ -20,6 +20,7 @@ window.I18N = (() => {
     // nav
     [`Ürün`, `Product`], [`Nasıl Analiz Eder`, `How It Analyses`],
     [`Yetenekler`, `Capabilities`], [`Tesis`, `Facility`], [`Pilot`, `Pilot`], [`Demo Talep Et`, `Request a Demo`],
+    [`Görüşme Planla`, `Book a Meeting`], [`Müşteri Girişi`, `Customer Login`],
     // hero
     [`NASIL ANALİZ EDER`, `HOW IT ANALYSES`], [`ÖRNEK KAYIT`, `RECORDED SAMPLE`],
     [`mevcut kameralar`, `existing cameras`], [`duygu tanıma yok`, `no emotion recognition`], [`işleme ve kayıt tesiste`, `processed and stored on-site`],

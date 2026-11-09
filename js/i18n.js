@@ -21,6 +21,8 @@ window.I18N = (() => {
     [`Ürün`, `Product`], [`Nasıl Analiz Eder`, `How It Analyses`],
     [`Yetenekler`, `Capabilities`], [`Tesis`, `Facility`], [`Pilot`, `Pilot`], [`Demo Talep Et`, `Request a Demo`],
     [`Görüşme Planla`, `Book a Meeting`], [`Müşteri Girişi`, `Customer Login`],
+    [`Sunumu E-postayla Al`, `Get the Presentation by E-mail`],
+    [`Tanıtım sunumu ve broşür <strong>PDF</strong> olarak hemen e-postanıza gönderilir.`, `Our presentation and brochure are sent to your inbox right away as <strong>PDF</strong>s.`],
     // hero
     [`NASIL ANALİZ EDER`, `HOW IT ANALYSES`], [`ÖRNEK KAYIT`, `RECORDED SAMPLE`],
     [`mevcut kameralar`, `existing cameras`], [`duygu tanıma yok`, `no emotion recognition`], [`işleme ve kayıt tesiste`, `processed and stored on-site`],

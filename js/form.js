@@ -1,15 +1,24 @@
-/* n0eyes — demo formu gönderimi.
-   Uç nokta: Netlify Function netlify/functions/form.js (Gmail SMTP; mailler info@n0eyes.com'dan çıkar). */
+/* n0eyes — alttaki form: tanıtım sunumu ve broşür e-postayla gider.
+   Uç nokta: müşteri portalı (portal.n0eyes.com), mailler info@n0eyes.com'dan çıkar. */
 (() => {
-  const UC = 'https://n0eyes-form.netlify.app/api/form';   // Netlify Function (boşsa form mailto'ya düşer)
+  const UC = 'https://portal.n0eyes.com/gorusme/sunum-site';   // boşsa form mailto'ya düşer
+  const GORUSME = 'https://portal.n0eyes.com/gorusme';
   const f = document.querySelector('#demoForm'); if (!f) return;
   const dugme = f.querySelector('button[type="submit"]');
   const T = {
-    tr: { gonderiliyor: 'Gönderiliyor…', ok: 'Talebiniz bize ulaştı', okAlt: 'Bir iş günü içinde dönüş yapıyoruz. Onay e-postası yolda.',
-          hata: 'Gönderilemedi — lütfen tekrar deneyin ya da info@n0eyes.com adresine yazın.', yeni: 'Yeni talep gönder',
+    tr: { gonderiliyor: 'Gönderiliyor…', ok: 'Sunumunuz e-postanıza gönderildi',
+          okAlt: 'Tanıtım sunumu ve broşür <b>{e}</b> adresine yola çıktı. Birkaç dakika içinde gelmezse istenmeyen klasörüne bakın.',
+          gorusme: 'Görüşme planla →', yeni: 'Başka bir adrese gönder',
+          hata: 'Gönderilemedi — lütfen tekrar deneyin ya da info@n0eyes.com adresine yazın.',
+          sinir: 'Bu adrese kısa süre önce gönderdik. Gelen kutunuzu ve istenmeyen klasörünü kontrol edin.',
+          eksik: 'Lütfen ad, firma ve e-posta alanlarını doldurup onay kutusunu işaretleyin.',
           epostaHata: 'E-posta adresini kontrol edin — bu adrese ulaşamıyoruz.' },
-    en: { gonderiliyor: 'Sending…', ok: 'Your request has reached us', okAlt: 'We reply within one business day. A confirmation e-mail is on its way.',
-          hata: 'Could not send — please try again or write to info@n0eyes.com.', yeni: 'Send another request',
+    en: { gonderiliyor: 'Sending…', ok: 'Your presentation is on its way',
+          okAlt: 'Our presentation and brochure have been sent to <b>{e}</b>. If they don’t arrive within a few minutes, check your spam folder.',
+          gorusme: 'Book a meeting →', yeni: 'Send to another address',
+          hata: 'Could not send — please try again or write to info@n0eyes.com.',
+          sinir: 'We sent it to this address a moment ago. Please check your inbox and spam folder.',
+          eksik: 'Please fill in your name, company and e-mail and tick the consent box.',
           epostaHata: 'Please check the e-mail address — we can’t reach it.' },
   };
   const dil = () => (document.documentElement.lang === 'en' ? 'en' : 'tr');
@@ -22,10 +31,12 @@
   tuzak.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;opacity:0';
   f.appendChild(tuzak);
 
-  const basarili = () => {
+  const kac = (x) => String(x).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const basarili = (eposta) => {
     const kutu = document.createElement('div');
     kutu.className = 'form__ok';
-    kutu.innerHTML = `<div class="form__okIcon">✓</div><b>${t('ok')}</b><span>${t('okAlt')}</span>
+    kutu.innerHTML = `<div class="form__okIcon">✓</div><b>${t('ok')}</b><span>${t('okAlt').replace('{e}', kac(eposta))}</span>
+      <a class="btn btn--sm" href="${GORUSME}">${t('gorusme')}</a>
       <button type="button" class="form__again">${t('yeni')}</button>`;
     dugme.textContent = eski; dugme.disabled = false;
     f.replaceWith(kutu);
@@ -46,12 +57,13 @@
       const r = await fetch(UC, { method: 'POST', body: new URLSearchParams([...veri]) });
       const j = await r.json().catch(() => ({ ok: r.ok }));
       if (!j.ok) throw new Error(j.hata || 'hata');
-      basarili();
+      basarili(veri.get('eposta'));
     } catch (err) {
       dugme.textContent = eski; dugme.disabled = false; gonderiliyor = false;
       let uyari = f.querySelector('.form__err');
       if (!uyari) { uyari = document.createElement('p'); uyari.className = 'form__err form__full'; f.appendChild(uyari); }
-      uyari.textContent = err && err.message === 'eposta_alani' ? t('epostaHata') : t('hata');
+      const k = err && err.message;
+      uyari.textContent = k === 'eposta_alani' ? t('epostaHata') : k === 'sinir' ? t('sinir') : k === 'eksik' ? t('eksik') : t('hata');
     }
   };
   const kur = () => { f.removeEventListener('submit', gonder); f.addEventListener('submit', gonder); gonderiliyor = false; };

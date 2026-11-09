@@ -465,3 +465,5 @@ body:not(.is-open) .nav{opacity:0;pointer-events:none}
   .nav__burger{display:flex;position:relative;z-index:2}
 }
 @media (max-width:1180px) and (max-height:780px){.nav__links{gap:15px;font-size:18px}}
+.form__ok span b{font:inherit;font-weight:600;color:var(--white)}
+.form__ok .btn{margin-top:8px}

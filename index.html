@@ -76,7 +76,6 @@
     </a>
     <nav class="nav__links" id="navLinks">
       <a href="#urun">Ürün</a>
-      <a href="#tanima">Tanıma</a>
       <a href="#canli">Nasıl Analiz Eder</a>
       <a href="#fabrika">Fabrika</a>
       <a href="#yetenekler">Yetenekler</a>
@@ -105,7 +104,7 @@
   <div class="container hero__content">
     <p class="eyebrow">ONE VISION. EVERY ENVIRONMENT.</p>
     <h1>Kameralarınızı<br>akıllı bir denetim<br>sistemine dönüştürün.</h1>
-    <p class="lead">n0eyes, mevcut kamera altyapısına ve sunucularınıza müdahale etmeden; ayrı bir bilgisayar üzerinden canlı görüntüleri izler, anlamlandırır ve yöneticiye raporlanabilir içgörü üretir. Depo, liman, hastane, mağaza — kameranız neredeyse, n0eyes orada.</p>
+    <p class="lead">n0eyes, mevcut kamera altyapısına ve sunucularınıza müdahale etmeden; ayrı bir bilgisayar üzerinden canlı görüntüleri izler, anlamlandırır ve yöneticiye raporlanabilir içgörü üretir. Fabrika, depo ve sevkiyat alanları için.</p>
     <div class="hero__cta">
       <a href="https://portal.n0eyes.com/gorusme" class="btn">Demo Talep Et</a>
       <a href="#canli" class="btn btn--ghost">Nasıl analiz ettiğini izle</a>
@@ -152,35 +151,6 @@
 </section>
 
 <!-- ================= NASIL ÇALIŞIR ================= -->
-<!-- ================= TANIMA (VD-3: kaydırdıkça sağa akan sınıflandırma geçidi) ================= -->
-<section class="reco" id="tanima">
-  <div class="reco__sticky">
-    <div class="container reco__head">
-      <p class="eyebrow">AYNI MOTOR · FARKLI ANLAM</p>
-      <h2>Hepsini görür. <span class="g">Hangisi olduğunu bilir.</span></h2>
-      <p class="lead">Bir kamera için hepsi hareket eden bir lekedir. n0eyes insanı araçtan, kamyonu otomobilden ve motosikletten ayırır.</p>
-    </div>
-
-    <div class="reco__stage">
-      <!-- Kare dizisi: assets/frames-vd3/f_0001..f_0112(.webp|@2x.webp) (VD-3, 12 fps, 1600px / 2560px; HAMER kuyruğu kesildi, köpek yüz kutusu temizlendi) -->
-      <canvas class="reco__canvas" id="recoCanvas" data-frames="112" data-src="assets/frames-vd3/f_{i}.webp" data-src2x="assets/frames-vd3/f_{i}@2x.webp"></canvas>
-      <div class="reco__hud" aria-hidden="true">
-        <i class="hud__c hud__c--tl"></i><i class="hud__c hud__c--tr"></i><i class="hud__c hud__c--bl"></i><i class="hud__c hud__c--br"></i>
-      </div>
-      <div class="reco__loader" id="recoLoader"><i></i></div>
-    </div>
-
-    <div class="container reco__foot">
-      <div class="reco__meta"><span class="reco__badge"><span class="dot"></span>SINIFLANDIRMA</span><span class="reco__count"><b id="recoCount">0</b> / 14 <span>SINIF</span></span></div>
-      <div class="reco__cap">
-        <b id="recoTitle">DENİZ TAŞITLARI</b>
-        <span id="recoText">Konteyner gemisi mi, tekne mi? Biri sevkiyattır, diğeri ziyaret.</span>
-      </div>
-      <div class="reco__track" id="recoTrack" aria-hidden="true"></div>
-    </div>
-  </div>
-</section>
-
 <!-- ================= CANLI ANALİZ (gerçek görüntü + HUD) ================= -->
 <section class="section" id="canli">
   <div class="container">
@@ -227,8 +197,8 @@
     </div>
 
     <div class="stats reveal">
-      <div class="stat"><b data-sabit="7/24">7/24</b><span>kesintisiz izleme · gece görüşü dahil</span></div>
-      <div class="stat"><b data-count="14">0</b><span>ayırt edilen sınıf · insan, araç, ekipman</span></div>
+      <div class="stat"><b data-sabit="60 sn">60 sn</b><span>kutu her kamerayı dakikada bir yoklar · kamera arızası bildirilir</span></div>
+      <div class="stat"><b data-count="3">0</b><span>ayırt edilen sınıf · insan, araç, forklift</span></div>
     </div>
   </div>
 </section>
@@ -251,8 +221,6 @@
       <figcaption class="fab__alt">Bir tekstil fabrikasında n0eyes'ın kaydettiği gerçek tespitlerden üretildi. İnsanlar nokta ve iz olarak gösterilir; yüz ve görüntü yoktur.</figcaption>
     </figure>
     <div class="fab-serit reveal">
-      <p><span>Kutu başına <b>24 kamera</b></span></p><!-- kaynak: K-69 -->
-      <p><span>Sor n0eyes: test setinde <b>50 sorudan 45 doğru, 0 uydurma</b></span></p><!-- kaynak: OLCUMLER §102 -->
       <p><span>Bu gösterimdeki tespit sayısı</span> <b id="fabTespit">—</b></p><!-- kaynak: assets/data JSON -->
     </div>
   </div>
@@ -264,10 +232,10 @@
     <div class="section__head reveal">
       <p class="eyebrow">ANA YETENEKLER</p>
       <h2>İnsanı değil, <span class="g">akışı ve olayı</span> takip ediyoruz.</h2>
-      <p class="lead">Depo, üretim, lojistik, perakende, sağlık — kamera neredeyse aynı motor. Sistem; insan hareketi, alan kullanımı ve olağan dışı olayları yöneticinin anlayacağı sade raporlara çevirir.</p>
+      <p class="lead">Fabrika, depo ve sevkiyat alanlarında sistem; insan hareketi, alan kullanımı ve olağan dışı olayları yöneticinin anlayacağı sade raporlara çevirir.</p>
     </div>
     <div class="grid grid--3 features">
-      <article class="feature reveal"><span class="feature__n">01</span><h3>Kişi sınıflandırma</h3><p>İşçi, misafir, müşteri ve yetkisiz giriş gibi farklı kişi tiplerini ayırmaya yönelik analiz. İsimsiz, toplu.</p></article>
+      <article class="feature reveal"><span class="feature__n">01</span><h3>Mesai dışı uyarısı</h3><p>Yalnız sizin verdiğiniz saatlerde. Her kişi ayrı satırdır: giriş saati, çıkış saati, ne kadar kaldığı.</p></article>
       <article class="feature reveal" style="--d:.05s"><span class="feature__n">02</span><h3>Bekleme ve akış</h3><p>Gün içi yoğunluk, duruş, bekleme süreleri ve alan bazlı çalışma ritmini hat/bölge bazında raporlar.</p></article>
       <article class="feature reveal" style="--d:.1s"><span class="feature__n">03</span><h3>Tehlike ve anomali</h3><p>Yasak bölgeye giriş, mesai dışı hareket — kanıt karesiyle.</p></article>
       <article class="feature reveal" style="--d:.15s"><span class="feature__n">04</span><h3>Alan ve varlık takibi</h3><p>Giriş-çıkışlar, rampa/kapı doluluğu, depo ve üretim hattı çevresindeki akış görünür olur.</p></article>
@@ -283,7 +251,7 @@
     <div class="section__head reveal">
       <p class="eyebrow">TESİSİN HER YERİNDE</p>
       <h2>Bütün kameralar. <span class="g">Tek bir göz.</span></h2>
-      <p class="lead">Otoparktan rampaya, depodan ofis girişine — mevcut her kamera n0eyes bilgisayarına bağlanır. Sistem tesisin normalini öğrenir, sapmayı bildirir.</p>
+      <p class="lead">Otoparktan rampaya, depodan ofis girişine — mevcut her kamera n0eyes bilgisayarına bağlanır. Kamera sayınız bir kutuyu aşarsa sahaya ikinci kutu eklenir; iki kutu tek sistem gibi çalışır, uyarılar ve kayıtlar tek yerden gelir.</p>
     </div>
 
     <div class="map reveal" id="map">
@@ -305,8 +273,8 @@
           <rect x="620" y="360" width="180" height="220" rx="6"/><text x="640" y="390">SEVKİYAT</text>
           <rect x="840" y="60"  width="300" height="300" rx="6"/><text x="860" y="90">ÜRETİM HATTI</text>
           <rect x="840" y="400" width="300" height="180" rx="6"/><text x="860" y="430">OFİS GİRİŞİ</text>
-          <!-- hariç tutulan alan -->
-          <g class="map__excluded"><rect x="1000" y="240" width="120" height="100" rx="6"/><text x="1012" y="266">DİNLENME</text><text x="1012" y="284">kapsam dışı</text></g>
+          <!-- dinlenme alanı diğer kameralar gibi izlenir (K-62 Ek 2) -->
+          <rect x="1000" y="240" width="120" height="100" rx="6"/><text x="1012" y="266">DİNLENME</text>
         </g>
 
         <!-- Hub -->
@@ -355,7 +323,7 @@
           <rect x="340" y="40"  width="260" height="170" rx="6"/><text x="356" y="66">ÜRETİM HATTI</text>
           <rect x="40"  y="250" width="260" height="190" rx="6"/><text x="56" y="276">DEPO</text>
           <rect x="340" y="250" width="260" height="190" rx="6"/><text x="356" y="276">OFİS GİRİŞİ</text>
-          <g class="map__excluded"><rect x="470" y="350" width="118" height="70" rx="6"/><text x="480" y="374">DİNLENME</text><text x="480" y="392">kapsam dışı</text></g>
+          <rect x="470" y="350" width="118" height="70" rx="6"/><text x="480" y="374">DİNLENME</text>
           <rect x="40"  y="640" width="260" height="190" rx="6"/><text x="56" y="666">DIŞ AVLU</text>
           <rect x="340" y="640" width="260" height="190" rx="6"/><text x="356" y="666">MAL KABUL</text>
           <rect x="40"  y="870" width="560" height="160" rx="6"/><text x="56" y="896">SEVKİYAT</text>
@@ -413,8 +381,8 @@
     </div>
     <ol class="steps">
       <li class="step reveal"><span class="step__n">1</span><h3>Keşif</h3><p>Kamera noktaları, izlenecek alanlar ve raporlama ihtiyacı netleştirilir.</p></li>
-      <li class="step reveal" style="--d:.08s"><span class="step__n">2</span><h3>Kurulum</h3><p>Ayrı n0eyes bilgisayarı konumlandırılır, görüntü izleme katmanı devreye alınır.</p></li>
-      <li class="step reveal" style="--d:.16s"><span class="step__n">3</span><h3>Kalibrasyon</h3><p>İşletmenin normal akışı öğrenilir; bölge, bekleme, risk ve alan kuralları ayarlanır.</p></li>
+      <li class="step reveal" style="--d:.08s"><span class="step__n">2</span><h3>Kurulum</h3><p>USB'yi takın: kutu kendini kurar, kayıt anahtarıyla kendini bağlar. Telefonunuz 6 haneli kodla eşleşir; telefona VPN kurmanız gerekmez. Kayıt cihazları uygulamadan bağlanır.</p></li>
+      <li class="step reveal" style="--d:.16s"><span class="step__n">3</span><h3>Sessiz başlangıç</h3><p>İsterseniz kutu ilk hafta sessiz başlar: kurallar işler, alarmlar kaydedilir ama size gönderilmez. Kamera arızası ve kayıt cihazı kesintisi bu haftada da hemen bildirilir.</p></li>
       <li class="step reveal" style="--d:.24s"><span class="step__n">4</span><h3>Raporlama</h3><p>Günlük/haftalık yönetici çıktıları ve canlı uyarılar sade panelde sunulur.</p></li>
     </ol>
 
@@ -458,7 +426,7 @@
       <p>Mevcut kameralarınızı yapay zekâ ile izleyen bağımsız görüntü analiz katmanı.</p>
       <div class="footer__badges"><span>KVKK</span><span>GDPR</span><span>YÜZ TANIMA YOK</span></div>
     </div>
-    <div class="footer__col"><b>Ürün</b><a href="#tanima">Tanıma</a><a href="#canli">Nasıl Analiz Eder</a><a href="#yetenekler">Yetenekler</a><a href="#tesis">Tesis Haritası</a></div>
+    <div class="footer__col"><b>Ürün</b><a href="#canli">Nasıl Analiz Eder</a><a href="#yetenekler">Yetenekler</a><a href="#tesis">Tesis Haritası</a></div>
     <div class="footer__col"><b>Şirket</b><a href="#pilot">Pilot Plan</a><a href="https://portal.n0eyes.com/gorusme">Demo Talep Et</a><a href="https://portal.n0eyes.com/giris">Müşteri Girişi</a><a href="sss.html">Sık Sorulan Sorular</a><a href="#iletisim">İletişim</a></div>
     <div class="footer__col"><b>Yasal</b><a href="kvkk.html">KVKK Aydınlatma Metni</a><a href="gizlilik.html">Gizlilik Politikası</a><a href="cerez.html">Çerez Politikası</a><a href="kosullar.html">Kullanım Koşulları</a></div>
     <div class="footer__col"><b>İletişim</b><a href="mailto:info@n0eyes.com">info@n0eyes.com</a><a href="https://www.n0eyes.com">www.n0eyes.com</a></div>
@@ -469,7 +437,7 @@
   </div>
 </footer>
 
-<script src="js/i18n.js?v=20261110a" defer></script>
+<script src="js/i18n.js?v=20261110b" defer></script>
 <script src="js/main.js?v=20261008e" defer></script>
 <script src="js/fabrika.js?v=20261008f" defer></script>
 <script src="js/form.js?v=20261110a" defer></script>

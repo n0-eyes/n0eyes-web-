@@ -145,7 +145,7 @@
     const bolum = $('#tanima'); if (!bolum) return;
     const cv = $('#recoCanvas', bolum), cx = cv.getContext('2d', { alpha: false });
     const sticky = $('.reco__sticky', bolum), loader = $('#recoLoader', bolum);
-    const capT = $('#recoTitle', bolum), capS = $('#recoText', bolum), sayac = $('#recoCount', bolum), track = $('#recoTrack', bolum);
+    const capT = $('#recoTitle', bolum), capS = $('#recoText', bolum), track = $('#recoTrack', bolum);
     const lead = $('.reco__head .lead', bolum);
     const N = +cv.dataset.frames;
     const retina2 = !yavas && (innerWidth * Math.min(devicePixelRatio || 1, 2)) > 1500;
@@ -212,7 +212,6 @@
         sonAktif = aktif; const el = noktalar[aktif];
         if (el && track.scrollWidth > track.clientWidth + 4) track.scrollTo({ left: el.offsetLeft - track.clientWidth / 2 + el.offsetWidth / 2, behavior: 'smooth' });
       }
-      sayac.textContent = String(aktif + 1);
     };
 
     const rp = new URLSearchParams(location.search).get('rp'); // debug: ?rp=0.5 -> bölümü o ilerlemede sabitle

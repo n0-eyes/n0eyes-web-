@@ -15,7 +15,6 @@ window.I18N = (() => {
     [`AYNI MOTOR · FARKLI ANLAM`, `ONE ENGINE · MANY MEANINGS`],
     [`Hepsini görür. <span class="g">Hangisi olduğunu bilir.</span>`, `It sees them all. <span class="g">It knows which is which.</span>`],
     [`SINIFLANDIRMA`, `CLASSIFICATION`], [`<span class="dot"></span>SINIFLANDIRMA`, `<span class="dot"></span>CLASSIFICATION`],
-    [`SINIF`, `CLASSES`],
     [`Tanıma`, `Recognition`], [`Bir kamera için hepsi hareket eden bir lekedir. n0eyes insanı araçtan, kamyonu otomobilden ve motosikletten ayırır.`, `To a plain camera they are all just moving shapes. n0eyes tells a person from a vehicle, and a truck from a car or a motorcycle.`],
     // nav
     [`Ürün`, `Product`], [`Nasıl Analiz Eder`, `How It Analyses`],

@@ -149,8 +149,6 @@ body:not(.is-open) .nav{opacity:0;pointer-events:none}
 .reco__foot{position:absolute;bottom:clamp(22px,4vh,40px);left:0;right:0;z-index:2;display:flex;flex-direction:column;gap:10px}
 .reco__meta{display:flex;align-items:center;justify-content:space-between;font-family:var(--font-h)}
 .reco__badge{display:inline-flex;align-items:center;gap:8px;font-size:10.5px;letter-spacing:.22em;color:var(--green)}
-.reco__count{font-size:10.5px;letter-spacing:.18em;color:var(--gray)}
-.reco__count b{color:var(--white);font-size:14px;font-weight:700}
 .reco__cap{min-height:56px}
 .reco__cap b{display:block;font-family:var(--font-h);font-size:clamp(15px,1.5vw,18px);letter-spacing:.14em;color:var(--green);margin-bottom:6px}
 .reco__cap span{display:block;font-size:clamp(14px,1.2vw,17px);color:var(--white);max-width:56ch;line-height:1.5;text-shadow:0 2px 14px rgba(0,0,0,.7)}
@@ -412,7 +410,7 @@ body:not(.is-open) .nav{opacity:0;pointer-events:none}
   .reco__track::-webkit-scrollbar{display:none}
   .reco__cap span{font-size:14px}
   .reco__stage::before{height:38%}.reco__stage::after{height:46%}
-  .reco__badge{left:44px;font-size:9px}.reco__count{right:44px;font-size:9px}
+  .reco__badge{left:44px;font-size:9px}
   .reco__cap{min-height:74px}
   .reco__track{gap:5px;max-height:64px;overflow:hidden}
   .reco__track i{font-size:9.5px;padding:4px 8px}
